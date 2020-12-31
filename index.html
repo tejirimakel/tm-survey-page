@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Satisfaction Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+   html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #666;
+      line-height: 28px;
+      }
+      h1 {
+      font-weight: 400;
+      }
+      h4 {
+      margin: 25px 0 5px;
+      }
+      .title{
+        padding-top:15px;
+        font-weight: 700;
+        color: maroon;
+        text-align:center;
+      }
+#description{
+  padding:5px 30px 10px 30px;
+  color:black;
+  font-weight:500
+}
+      .contain{
+        background-color: teal;
+      }
+.logo{
+  text-align:center;
+  padding-bottom:3px;
+}
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding:2rem 17rem 2rem 17rem;
+
+      }
+.sq{
+  padding:30px;
+}
+.question-answer{
+  padding:20px 0 20px 0;
+}
+.textform {
+  padding-bottom:15px;
+}
+.btn{
+  background-color:#842309;
+  color:#fff;
+  border-color:none;
+}
+.btn:hover{
+   background-color:#000;
+  color:#fff;
+  border-color: none;
+}
+      form {
+      width: 100%;
+      padding: 25px;
+      background: rgba(255,255,255,0.9);
+      box-shadow: 0 2px 5px #ccc; 
+      border-radius: 20px 20px;
+      }
+.form-group label{
+  font-weight:500;
+}
+
+.form-group h4{
+  padding:10px 0 15px 0;
+}
+
+.fom{
+  padding: 30px;
+}
+      input {
+      width: auto;
+      margin-right: 15px;
+      vertical-align: middle;
+      }
+      .question-answer label {
+      display: block;
+      }
+      textarea {
+      width: calc(100% - 12px);
+      padding: 5px;
+      }
+      textarea:hover {
+      outline: none;
+      border: 1px solid #095484;
+      }
+      .btn-block {
+      margin-top: 20px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      outline: none;
+      -webkit-border-radius: 5px; 
+      -moz-border-radius: 5px; 
+      border-radius: 5px; 
+      background-color: #842309;
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+      }
+      button:hover {
+      background-color: #0666a3;
+      }
+      @media (max-width: 991px){.testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding:2rem 8rem 2rem 8rem;
+    }
+    @media (max-width: 430px){.testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding:2rem 4rem 2rem 4rem;
+    }
+    @media (max-width: 1100px){.testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding:2rem 8rem 2rem 8rem;
+    }
+      }
+       @media (max-width: 991px){
+      form {
+      width: 100%;
+      padding: 25px;
+      background: rgba(255,255,255,0.9);
+      box-shadow: 0 2px 5px #ccc; 
+      border-radius: 15px 15px;
+      }
+    }
+    </style>
+  </head>
+<body>
+  <div class="contain">
+    <div class="testbox">
+      <form id="survey-form" action="#">
+        <div class="logo">
+        <img src="https://tejirimakel.github.io/tribute/img/logo-black.png">
+        </div>
+        <h1 id="title" class="title">Customer Satisfaction Survey</h1>
+        <p id="description">We use your data for several reasons, from understanding how users engage with our website to publishing content that you read on our website.</p>
+        <div class="fom">
+        <div class="row">
+  <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="Name" id="name-label">Name</label>
+                          <input type="name" value="" class="form-control"  id="name" placeholder="Your Name" required>
+                        </div>
+                      </div>
+        <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="email" id="email-label">Email</label>
+                          <input type="email" value="" class="form-control"  id="email" required placeholder="Your Email">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+        <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="gender" id="gender-label">Gender</label>
+                          <select class="custom-select" id="dropdown" name="gender_id">
+                            <option value=""> --- Please Select --- </option>
+                           <option value="M">Male</option> <option value="F">Female</option>
+                          </select>
+                            </div>
+          </div>
+        <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                          <label for="age" id="number-label">Age</label>
+                          <input type="number" value="" class="form-control"  id="number" min="10" max="80" placeholder="Your Age">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+       <div class="sq"> 
+          <h4>For how long have you been using our product / service?</h4>
+        
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="using" />Less than a month</label>
+            <label><input type="radio" value="none" name="using" />1-12 months</label>
+            <label><input type="radio" value="none" name="using" />1-3 years</label>
+            <label><input type="radio" value="none" name="using" />Over 3 years</label>
+            <label><input type="radio" value="none" name="using" />Never used</label>
+          </d>
+        </div>
+        <div>
+          <h4>How often do you use our product / service?</h4>
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="product" />Once a week</label>
+            <label><input type="radio" value="none" name="product" />2 or 3 times a month</label>
+            <label><input type="radio" value="none" name="product" />Once a month</label>
+            <label><input type="radio" value="none" name="product" />Less than once a month</label>
+          </div>
+        </div>
+        <div>
+          <h4>How satisfied are you with the product / service?</h4>
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="satisfied" />Very Satisfied</label>
+            <label><input type="radio" value="none" name="satisfied" />Satisfied</label>
+            <label><input type="radio" value="none" name="satisfied" />Neutral</label>
+            <label><input type="radio" value="none" name="satisfied" />Unsatisfied</label>
+            <label><input type="radio" value="none" name="satisfied" />Very Unsatisfied</label>
+          </div>
+        </div>
+        <div>
+          <h4>What impressed you most about the product / service ?</h4>
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="impressed" />Quality</label>
+              <label><input type="radio" value="none" name="impressed" />Price</label>
+              <label><input type="radio" value="none" name="impressed" />Shopping Experience</label>
+              <label><input type="radio" value="none" name="impressed" />Installation or First Use Experience</label>
+              <label><input type="radio" value="none" name="impressed" />Usability</label>
+              <label><input type="radio" value="none" name="impressed" />Customer Service</label>
+          </div>
+        </div>
+        <div>
+          <h4>What disappointed you most about the product / service ?</h4>
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="disappointed" />Quality</label>
+              <label><input type="radio" value="none" name="disappointed" />Price</label>
+              <label><input type="radio" value="none" name="disappointed" />Shopping Experience</label>
+              <label><input type="radio" value="none" name="disappointed" />Installation or First Use Experience</label>
+              <label><input type="radio" value="none" name="disappointed" />Usability</label>
+              <label><input type="radio" value="none" name="disappointed" />Customer Service</label>
+          </div>
+        </div>
+        <div class="form-group textform">
+          <h4>What do you like about the product / service?</h4>
+          <textarea class="form-control" rows="5"></textarea>
+        </div>
+       
+        <div>
+          <h4>Compared to similar products offered by other companies, how do you consider our product?</h4>
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="offered" />Much Better</label>
+            <label><input type="radio" value="none" name="offered" />Somewhat Better</label>
+            <label><input type="radio" value="none" name="offered" />About the Same</label>
+            <label><input type="radio" value="none" name="offered" />Somewhat Worse</label>
+            <label><input type="radio" value="none" name="offered" />Much Worse</label>
+            <label><input type="radio" value="none" name="offered" />Don't Know</label>
+          </div>
+        </div>
+        <div>
+          <h4>Would you use our product / service in the future?</h4>
+          <div class="question-answer">
+            <label><input type="checkbox" value="none" name="future" />Definitely</label>
+            <label><input type="checkbox" value="none" name="future" />Probably</label>
+            <label><input type="checkbox" value="none" name="future" />Not Sure</label>
+            <label><input type="checkbox" value="none" name="future" />Probably Not</label>
+            <label><input type="checkbox" value="none" name="future" />Definitely Not</label>
+          </div>
+        </div>
+        <div>
+          <h4>Would you recommend our product / service to other people?</h4>
+          <div class="question-answer">
+            <label><input type="checkbox" value="none" name="recommend" />Definitely</label>
+            <label><input type="checkbox" value="none" name="recommend" />Probably</label>
+            <label><input type="checkbox" value="none" name="recommend" />Not Sure</label>
+            <label><input type="checkbox" value="none" name="recommend" />Probably Not</label>
+            <label><input type="checkbox" value="none" name="recommend" />Definitely Not</label>
+          </div>
+        </div>
+        <div class="form-group textform">
+          <h4>Additional Comments</h4>
+          <textarea class="form-control" rows="5"></textarea>
+        </div>
+        <div class="btn-block">
+          <button type="submit" class="btn btn-primary" id="submit" href="#">Send Feedback</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
