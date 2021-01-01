@@ -1,7 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
     <title>Customer Satisfaction Survey Form</title>
+    <meta content="Survey Page Project" name="description">
+    <meta content="tejiri-makele" name="author">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <!-- favicon -->
+    <link href="img/favicon.png" rel="icon" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -36,19 +43,108 @@
   font-weight:500
 }
       .contain{
-        background-color: teal;
-      }
+        background-image: url(img/bg-4.jpg);
+        background-size: cover;
+        z-index: -99999;
+ }
+
 .logo{
   text-align:center;
   padding-bottom:3px;
 }
+.png1{
+  z-index: 1;
+  position: absolute;
+  margin-top: 30rem;
+  animation: png1 1s linear infinite;
+}
+@keyframes png1 {
+  to {
+    -webkit-transform: translateX(70px);
+       -moz-transform: translateX(70px);
+        -ms-transform: translateX(70px);
+         -o-transform: translateX(70px);
+            transform: translateX(70px);    
+  }
+}
+.png2{
+  z-index: 1;
+  position: absolute;
+  margin-top: 10rem;
+  margin-left: 62.9rem;
+  animation: png2 1s linear infinite;
+}
+@keyframes png2 {
+  to {
+    -webkit-transform: translateX(-70px);
+       -moz-transform: translateX(-70px);
+        -ms-transform: translateX(-70px);
+         -o-transform: translateX(-70px);
+            transform: translateX(-70px);    
+  }
+}
+.png3{
+  z-index: 1;
+  position: absolute;
+  margin-top: 30rem;
+  animation: png1 1s linear infinite;
+}
+@keyframes png1 {
+  to {
+    -webkit-transform: translateX(70px);
+       -moz-transform: translateX(70px);
+        -ms-transform: translateX(70px);
+         -o-transform: translateX(70px);
+            transform: translateX(70px);    
+  }
+}
+.png4{
+  z-index: 1;
+  position: absolute;
+  margin-top: 10rem;
+  margin-left: 62.9rem;
+  animation: png2 1s linear infinite;
+}
+@keyframes png2 {
+  to {
+    -webkit-transform: translateX(-70px);
+       -moz-transform: translateX(-70px);
+        -ms-transform: translateX(-70px);
+         -o-transform: translateX(-70px);
+            transform: translateX(-70px);    
+  }
+}
+
+:root .png1{
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -2s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+:root .png2{
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -2s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+
       .testbox {
       display: flex;
       justify-content: center;
       align-items: center;
       height: auto;
       padding:2rem 17rem 2rem 17rem;
-
+      z-index: 99999999;
+      position: relative;
+      
       }
 .sq{
   padding:30px;
@@ -154,10 +250,13 @@
       border-radius: 15px 15px;
       }
     }
+
     </style>
   </head>
 <body>
   <div class="contain">
+    <img class="png1" src="img/bg-2.png">
+    <img class="png2" src="img/bg-3.png">
     <div class="testbox">
       <form id="survey-form" action="#">
         <div class="logo">
@@ -297,6 +396,11 @@
       </form>
     </div>
   </div>
+  <<script>
+    window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}, false);
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
