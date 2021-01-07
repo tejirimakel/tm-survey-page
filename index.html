@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Customer Satisfaction Survey Form</title>
     <meta content="Survey Page Project" name="description">
@@ -13,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <style>
-   html, body {
+        html, body {
       min-height: 100%;
       }
       body, div, form, input, p { 
@@ -241,158 +242,159 @@
     }
 
     </style>
-  </head>
+</head>
+
 <body>
-  <div class="contain">
-    <div class="testbox fadeIn">
-      <form id="survey-form" action="">
-        <div class="logo">
-        <img src="https://tejirimakel.github.io/tribute/img/logo-black.png">
-        </div>
-        <h1 id="title" class="title">Customer Satisfaction Survey</h1>
-        <p id="description">We use your data for several reasons, from understanding how users engage with our website to publishing content that you read on our website.</p>
-        <div class="fom">
-        <div class="row">
-  <div class="col-12 col-sm-6">
-                        <div class="form-group">
-                          <label for="Name" id="name-label">Name</label>
-                          <input type="name" value="" class="form-control"  id="name" placeholder="Your Name" required>
+    <div class="contain">
+        <div class="testbox fadeIn">
+            <form id="survey-form" action="">
+                <div class="logo">
+                    <img src="https://tejirimakel.github.io/tribute/img/logo-black.png">
+                </div>
+                <h1 id="title" class="title">Customer Satisfaction Survey</h1>
+                <p id="description">We use your data for several reasons, from understanding how users engage with our website to publishing content that you read on our website.</p>
+                <div class="fom">
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="Name" id="name-label">Name</label>
+                                <input type="name" value="" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
                         </div>
-                      </div>
-        <div class="col-12 col-sm-6">
-                        <div class="form-group">
-                          <label for="email" id="email-label">Email</label>
-                          <input type="email" value="" class="form-control"  id="email" required placeholder="Your Email">
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="email" id="email-label">Email</label>
+                                <input type="email" value="" class="form-control" id="email" required placeholder="Your Email">
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <div class="row">
-        <div class="col-12 col-sm-6">
-                        <div class="form-group">
-                          <label for="gender" id="gender-label">Gender</label>
-                          <select class="custom-select" id="dropdown" name="gender_id">
-                            <option value=""> --- Please Select --- </option>
-                           <option value="M">Male</option> <option value="F">Female</option>
-                          </select>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="gender" id="gender-label">Gender</label>
+                                <select class="custom-select" id="dropdown" name="gender_id">
+                                    <option value=""> --- Please Select --- </option>
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                </select>
                             </div>
-          </div>
-        <div class="col-12 col-sm-6">
-                        <div class="form-group">
-                          <label for="age" id="number-label">Age</label>
-                          <input type="number" value="" class="form-control"  id="number" min="10" max="80" placeholder="Your Age">
                         </div>
-                      </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="age" id="number-label">Age</label>
+                                <input type="number" value="" class="form-control" id="number" min="10" max="80" placeholder="Your Age">
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <hr>
-       <div class="sq"> 
-          <h4>For how long have you been using our product / service?</h4>
-        
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="using" />Less than a month</label>
-            <label><input type="radio" value="none" name="using" />1-12 months</label>
-            <label><input type="radio" value="none" name="using" />1-3 years</label>
-            <label><input type="radio" value="none" name="using" />Over 3 years</label>
-            <label><input type="radio" value="none" name="using" />Never used</label>
-          </d>
+                </div>
+                <hr>
+                <div class="sq">
+                    <h4>For how long have you been using our product / service?</h4>
+                    <div class="question-answer">
+                        <label><input type="radio" value="none" name="using" />Less than a month</label>
+                        <label><input type="radio" value="none" name="using" />1-12 months</label>
+                        <label><input type="radio" value="none" name="using" />1-3 years</label>
+                        <label><input type="radio" value="none" name="using" />Over 3 years</label>
+                        <label><input type="radio" value="none" name="using" />Never used</label>
+                        </d>
+                    </div>
+                    <div>
+                        <h4>How often do you use our product / service?</h4>
+                        <div class="question-answer">
+                            <label><input type="radio" value="none" name="product" />Once a week</label>
+                            <label><input type="radio" value="none" name="product" />2 or 3 times a month</label>
+                            <label><input type="radio" value="none" name="product" />Once a month</label>
+                            <label><input type="radio" value="none" name="product" />Less than once a month</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>How satisfied are you with the product / service?</h4>
+                        <div class="question-answer">
+                            <label><input type="radio" value="none" name="satisfied" />Very Satisfied</label>
+                            <label><input type="radio" value="none" name="satisfied" />Satisfied</label>
+                            <label><input type="radio" value="none" name="satisfied" />Neutral</label>
+                            <label><input type="radio" value="none" name="satisfied" />Unsatisfied</label>
+                            <label><input type="radio" value="none" name="satisfied" />Very Unsatisfied</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>What impressed you most about the product / service ?</h4>
+                        <div class="question-answer">
+                            <label><input type="radio" value="none" name="impressed" />Quality</label>
+                            <label><input type="radio" value="none" name="impressed" />Price</label>
+                            <label><input type="radio" value="none" name="impressed" />Shopping Experience</label>
+                            <label><input type="radio" value="none" name="impressed" />Installation or First Use Experience</label>
+                            <label><input type="radio" value="none" name="impressed" />Usability</label>
+                            <label><input type="radio" value="none" name="impressed" />Customer Service</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>What disappointed you most about the product / service ?</h4>
+                        <div class="question-answer">
+                            <label><input type="radio" value="none" name="disappointed" />Quality</label>
+                            <label><input type="radio" value="none" name="disappointed" />Price</label>
+                            <label><input type="radio" value="none" name="disappointed" />Shopping Experience</label>
+                            <label><input type="radio" value="none" name="disappointed" />Installation or First Use Experience</label>
+                            <label><input type="radio" value="none" name="disappointed" />Usability</label>
+                            <label><input type="radio" value="none" name="disappointed" />Customer Service</label>
+                        </div>
+                    </div>
+                    <div class="form-group textform">
+                        <h4>What do you like about the product / service?</h4>
+                        <textarea class="form-control" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <h4>Compared to similar products offered by other companies, how do you consider our product?</h4>
+                        <div class="question-answer">
+                            <label><input type="radio" value="none" name="offered" />Much Better</label>
+                            <label><input type="radio" value="none" name="offered" />Somewhat Better</label>
+                            <label><input type="radio" value="none" name="offered" />About the Same</label>
+                            <label><input type="radio" value="none" name="offered" />Somewhat Worse</label>
+                            <label><input type="radio" value="none" name="offered" />Much Worse</label>
+                            <label><input type="radio" value="none" name="offered" />Don't Know</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Would you use our product / service in the future?</h4>
+                        <div class="question-answer">
+                            <label><input type="checkbox" value="none" name="future" />Definitely</label>
+                            <label><input type="checkbox" value="none" name="future" />Probably</label>
+                            <label><input type="checkbox" value="none" name="future" />Not Sure</label>
+                            <label><input type="checkbox" value="none" name="future" />Probably Not</label>
+                            <label><input type="checkbox" value="none" name="future" />Definitely Not</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Would you recommend our product / service to other people?</h4>
+                        <div class="question-answer">
+                            <label><input type="checkbox" value="none" name="recommend" />Definitely</label>
+                            <label><input type="checkbox" value="none" name="recommend" />Probably</label>
+                            <label><input type="checkbox" value="none" name="recommend" />Not Sure</label>
+                            <label><input type="checkbox" value="none" name="recommend" />Probably Not</label>
+                            <label><input type="checkbox" value="none" name="recommend" />Definitely Not</label>
+                        </div>
+                    </div>
+                    <div class="form-group textform">
+                        <h4>Additional Comments</h4>
+                        <textarea class="form-control" rows="5"></textarea>
+                    </div>
+                    <div class="btn-block">
+                        <button type="submit" class="btn btn-primary" id="submit" href="#">Send Feedback</button>
+                    </div>
+            </form>
         </div>
-        <div>
-          <h4>How often do you use our product / service?</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="product" />Once a week</label>
-            <label><input type="radio" value="none" name="product" />2 or 3 times a month</label>
-            <label><input type="radio" value="none" name="product" />Once a month</label>
-            <label><input type="radio" value="none" name="product" />Less than once a month</label>
-          </div>
-        </div>
-        <div>
-          <h4>How satisfied are you with the product / service?</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="satisfied" />Very Satisfied</label>
-            <label><input type="radio" value="none" name="satisfied" />Satisfied</label>
-            <label><input type="radio" value="none" name="satisfied" />Neutral</label>
-            <label><input type="radio" value="none" name="satisfied" />Unsatisfied</label>
-            <label><input type="radio" value="none" name="satisfied" />Very Unsatisfied</label>
-          </div>
-        </div>
-        <div>
-          <h4>What impressed you most about the product / service ?</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="impressed" />Quality</label>
-              <label><input type="radio" value="none" name="impressed" />Price</label>
-              <label><input type="radio" value="none" name="impressed" />Shopping Experience</label>
-              <label><input type="radio" value="none" name="impressed" />Installation or First Use Experience</label>
-              <label><input type="radio" value="none" name="impressed" />Usability</label>
-              <label><input type="radio" value="none" name="impressed" />Customer Service</label>
-          </div>
-        </div>
-        <div>
-          <h4>What disappointed you most about the product / service ?</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="disappointed" />Quality</label>
-              <label><input type="radio" value="none" name="disappointed" />Price</label>
-              <label><input type="radio" value="none" name="disappointed" />Shopping Experience</label>
-              <label><input type="radio" value="none" name="disappointed" />Installation or First Use Experience</label>
-              <label><input type="radio" value="none" name="disappointed" />Usability</label>
-              <label><input type="radio" value="none" name="disappointed" />Customer Service</label>
-          </div>
-        </div>
-        <div class="form-group textform">
-          <h4>What do you like about the product / service?</h4>
-          <textarea class="form-control" rows="5"></textarea>
-        </div>
-       
-        <div>
-          <h4>Compared to similar products offered by other companies, how do you consider our product?</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="offered" />Much Better</label>
-            <label><input type="radio" value="none" name="offered" />Somewhat Better</label>
-            <label><input type="radio" value="none" name="offered" />About the Same</label>
-            <label><input type="radio" value="none" name="offered" />Somewhat Worse</label>
-            <label><input type="radio" value="none" name="offered" />Much Worse</label>
-            <label><input type="radio" value="none" name="offered" />Don't Know</label>
-          </div>
-        </div>
-        <div>
-          <h4>Would you use our product / service in the future?</h4>
-          <div class="question-answer">
-            <label><input type="checkbox" value="none" name="future" />Definitely</label>
-            <label><input type="checkbox" value="none" name="future" />Probably</label>
-            <label><input type="checkbox" value="none" name="future" />Not Sure</label>
-            <label><input type="checkbox" value="none" name="future" />Probably Not</label>
-            <label><input type="checkbox" value="none" name="future" />Definitely Not</label>
-          </div>
-        </div>
-        <div>
-          <h4>Would you recommend our product / service to other people?</h4>
-          <div class="question-answer">
-            <label><input type="checkbox" value="none" name="recommend" />Definitely</label>
-            <label><input type="checkbox" value="none" name="recommend" />Probably</label>
-            <label><input type="checkbox" value="none" name="recommend" />Not Sure</label>
-            <label><input type="checkbox" value="none" name="recommend" />Probably Not</label>
-            <label><input type="checkbox" value="none" name="recommend" />Definitely Not</label>
-          </div>
-        </div>
-        <div class="form-group textform">
-          <h4>Additional Comments</h4>
-          <textarea class="form-control" rows="5"></textarea>
-        </div>
-        <div class="btn-block">
-          <button type="submit" class="btn btn-primary" id="submit" href="#">Send Feedback</button>
-        </div>
-      </form>
     </div>
-  </div>
-  <script>
-    $(function(){
-    var msg ="Thank You";
+    <script>
+    $(function() {
+        var msg = "Thank You";
 
-      $("#submit").on('click', function () {
-        alert(msg);
-});
+        $("#submit").on('click', function() {
+            alert(msg);
+        });
     });
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-  </body>
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</body>
+
 </html>
