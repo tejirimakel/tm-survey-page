@@ -42,9 +42,10 @@
   color:black;
   font-weight:500
 }
-      .contain{
-        background-image: url(img/bg-4.jpg);
-        background-size: cover;
+
+.contain{
+        background-image: url(img/bg-1.jpg);
+        background-size:;s
         z-index: -99999;
  }
 
@@ -52,91 +53,9 @@
   text-align:center;
   padding-bottom:3px;
 }
-.png1{
-  z-index: 1;
-  position: absolute;
-  margin-top: 30rem;
-  animation: png1 1s linear infinite;
-}
-@keyframes png1 {
-  to {
-    -webkit-transform: translateX(70px);
-       -moz-transform: translateX(70px);
-        -ms-transform: translateX(70px);
-         -o-transform: translateX(70px);
-            transform: translateX(70px);    
-  }
-}
-.png2{
-  z-index: 1;
-  position: absolute;
-  margin-top: 10rem;
-  margin-left: 62.9rem;
-  animation: png2 1s linear infinite;
-}
-@keyframes png2 {
-  to {
-    -webkit-transform: translateX(-70px);
-       -moz-transform: translateX(-70px);
-        -ms-transform: translateX(-70px);
-         -o-transform: translateX(-70px);
-            transform: translateX(-70px);    
-  }
-}
-.png3{
-  z-index: 1;
-  position: absolute;
-  margin-top: 30rem;
-  animation: png1 1s linear infinite;
-}
-@keyframes png1 {
-  to {
-    -webkit-transform: translateX(70px);
-       -moz-transform: translateX(70px);
-        -ms-transform: translateX(70px);
-         -o-transform: translateX(70px);
-            transform: translateX(70px);    
-  }
-}
-.png4{
-  z-index: 1;
-  position: absolute;
-  margin-top: 10rem;
-  margin-left: 62.9rem;
-  animation: png2 1s linear infinite;
-}
-@keyframes png2 {
-  to {
-    -webkit-transform: translateX(-70px);
-       -moz-transform: translateX(-70px);
-        -ms-transform: translateX(-70px);
-         -o-transform: translateX(-70px);
-            transform: translateX(-70px);    
-  }
-}
-
-:root .png1{
-  /* Pause the animation */
-  animation-play-state: paused;
-  /* Bind the animation to scroll */
-  animation-delay: calc(var(--scroll) * -2s);
-  /* These last 2 properites clean up overshoot weirdness */
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-}
-
-:root .png2{
-  /* Pause the animation */
-  animation-play-state: paused;
-  /* Bind the animation to scroll */
-  animation-delay: calc(var(--scroll) * -2s);
-  /* These last 2 properites clean up overshoot weirdness */
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-}
 
 
-      .testbox {
+.testbox {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -144,8 +63,43 @@
       padding:2rem 17rem 2rem 17rem;
       z-index: 99999999;
       position: relative;
-      
-      }
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 8s normal;
+     -moz-animation: fadeIn 8s normal;
+      -ms-animation: fadeIn 8s normal;
+       -o-animation: fadeIn 8s normal;
+          animation: fadeIn 8s normal;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 .sq{
   padding:30px;
 }
@@ -255,9 +209,7 @@
   </head>
 <body>
   <div class="contain">
-    <img class="png1" src="img/bg-2.png">
-    <img class="png2" src="img/bg-3.png">
-    <div class="testbox">
+    <div class="testbox fadeIn">
       <form id="survey-form" action="#">
         <div class="logo">
         <img src="https://tejirimakel.github.io/tribute/img/logo-black.png">
@@ -396,11 +348,15 @@
       </form>
     </div>
   </div>
-  <<script>
-    window.addEventListener('scroll', () => {
-  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-}, false);
+  <script>
+    $(function(){
+      $(window).on('load', function () {
+        $(".testbox").hide();
+        
+});
+    });
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
   </body>
 </html>
