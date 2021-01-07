@@ -40,6 +40,7 @@
 #description{
   padding:5px 30px 10px 30px;
   color:black;
+  text-align: center;
   font-weight:500
 }
 
@@ -66,11 +67,11 @@
 }
 
 .fadeIn {
-  -webkit-animation: fadeIn 8s normal;
-     -moz-animation: fadeIn 8s normal;
-      -ms-animation: fadeIn 8s normal;
-       -o-animation: fadeIn 8s normal;
-          animation: fadeIn 8s normal;
+  -webkit-animation: fadeIn 5s ease-in normal;
+     -moz-animation: fadeIn 5s ease-in normal;
+      -ms-animation: fadeIn 5s ease-in normal;
+       -o-animation: fadeIn 5s ease-in normal;
+          animation: fadeIn 5s ease-in normal;
 }
 
 @-webkit-keyframes fadeIn {
@@ -244,7 +245,7 @@
 <body>
   <div class="contain">
     <div class="testbox fadeIn">
-      <form id="survey-form" action="#">
+      <form id="survey-form" action="">
         <div class="logo">
         <img src="https://tejirimakel.github.io/tribute/img/logo-black.png">
         </div>
@@ -384,9 +385,10 @@
   </div>
   <script>
     $(function(){
-      $(window).on('load', function () {
-        $(".testbox").hide();
-        
+    var msg ="Thank You";
+
+      $("#submit").on('click', function () {
+        alert(msg);
 });
     });
   </script>
